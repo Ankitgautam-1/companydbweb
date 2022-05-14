@@ -28,7 +28,7 @@ function App() {
   const dispatch = useDispatch();
   const [show, setShow] = useState(false);
   const [editShow, setEditShow] = useState(false);
-  const [setSelected] = useState<any>("Andaman and Nicobar Islands");
+  const [, setSelected] = useState<any>("Andaman and Nicobar Islands");
   const formref = useRef<HTMLFormElement | null>(null);
   const [cities, setCities] = useState(["Port Blair*"]);
   const [company_name, setcompany_name] = useState("");
