@@ -69,7 +69,7 @@ function App() {
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoic2VydmljZV9yb2xlIiwiaWF0IjoxNjM5NjQ0MzM2LCJleHAiOjE5NTUyMjAzMzZ9.7ZRfV8ekUJBSLVQWA6ylO5gdbE5BNnnD8lyZDflOgU0"
   );
   useEffect(() => {
-    fetch("https://companydatabaseweb.herokuapp.com/getCompany").then((res) =>
+    fetch("https://companiesdb.herokuapp.com/getCompany").then((res) =>
       res.json().then((data: Companies[]) => dispatch(initTheData(data)))
     );
   }, [dispatch]);
